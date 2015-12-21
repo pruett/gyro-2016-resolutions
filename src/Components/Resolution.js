@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Resolution = ({copy}) => (
+const Resolution = ({content}) => (
   <li>
-    {copy}
+    {content}
   </li>
 )
 

@@ -1,20 +1,25 @@
 import React from 'react'
 import Resolution from './Resolution'
 
-const ResolutionList = (
-  { allResolutions
-  , chosenResolutions
-  , addRandomResolution
-  }) => (
+const ResolutionList = ({resolutions, uniqueOrder, userResolutions, addResolution}) => (
+  <div>
+    <h1>Resolution Generator</h1>
     <ul>
-      {chosenResolutions.map(res => (
+      {userResolutions.map((x, i)  => (
         <Resolution
-          key={res.id}
-          content={res.copy}
+          key={resolutions[uniqueOrder[i]].id}
+          content={resolutions[uniqueOrder[i]].content}
         />
       ))}
     </ul>
-    <button onClick={addRandomResolution}>add res</button>
-  )
+
+    {userResolutions.length < uniqueOrder.length
+      ?
+        <button onClick={addResolution}>add res</button>
+      :
+        <span>Happy Holidays!</span>
+    }
+  </div>
+)
 
 export default ResolutionList
