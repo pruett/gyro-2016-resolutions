@@ -34,7 +34,8 @@
 
 .answer {
   composes: introButton from './App.css';
-  padding: 0.5rem 1rem 1rem
+  padding: .5rem 1rem 1.5rem;
+  max-width: 180px;
 }
 
 .answerYes {

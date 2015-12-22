@@ -10,7 +10,7 @@ const QuestionList = ({questions, questionId, nextQuestion, showGenerator}) => (
     <div className={styles.dots}></div>
 
     <Question
-      content={questions[questionId].copy}
+      content={questions[questionId]}
       clickHandler={questionId === questions.length - 1 ? showGenerator : nextQuestion}
     />
 

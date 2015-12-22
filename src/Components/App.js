@@ -29,11 +29,11 @@ const IntroSection = ({showQuestions}) => (
 class App extends React.Component {
   componentWillMount () {
     this.setState({
-      showIntro: true,
+      showIntro: false,
       showQuestions: false,
       questionId: 0,
-      showResolutionGenerator: false,
-      listResolutions: []
+      showResolutionGenerator: true,
+      listResolutions: [true]
     })
   }
 

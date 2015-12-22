@@ -66,3 +66,7 @@ body {
   cursor: pointer;
   float: right;
 }
+
+.introButton:active {
+  transform: translateY(2px);
+}

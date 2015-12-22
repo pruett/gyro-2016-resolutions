@@ -1,17 +1,9 @@
 export const questions =
-  [ { id: 1, copy: "Did you remember to tip your waitstaff this year?" }
-  , { id: 2, copy: "Did you make your bed each morning?" }
-  , { id: 3, copy: "Did you eat at a farm to table restaurant this year?" }
-  , { id: 4, copy: "Did you say 'Thank You' to the person who held the door for you?" }
-  , { id: 5, copy: "Did you donate to charity?" }
-  , { id: 6, copy: "Did you help out your neighbor with their leaves?" }
-  , { id: 7, copy: "Did you assist the elderly in crossing the street?" }
-  , { id: 8, copy: "Did you support the Boy or Girl Scouts?" }
-  , { id: 9, copy: "Did you tip your mailperson this holiday season?" }
-  , { id: 10, copy: "Did you put your back into it?" }
-  , { id: 11, copy: "Did you volunteer your time?" }
-  , { id: 12, copy: "Did you go to that PTA thing you really didn't want to, but did it anyway?" }
-  , { id: 13, copy: "Do you believe in the greater good?" }
+  [ { id: 1, copy: "Did you make your bed everyday this year?", positive: "Yes, of course I did.", negative: "No, what's the point?" }
+  , { id: 2, copy: 'Did you say "Thank You" to the person who held the door for you?', positive: "Yes, every single time.", negative: "No, they're lucky they got to hold the door for me." }
+  , { id: 3, copy: "Did you help out your neighbor with their leaves?", positive: "Yes, my leaf blower is neighborhood famous.", negative: "No, your yard, your problem." }
+  , { id: 4, copy: "Did you put your back into it?", positive: "Yes, my back is in it.", negative: "No, my back is out of it." }
+  , { id: 5, copy: "Do you believe in the greater good?", positive: "Yes, of course I do.", negative: "No, what the devil is that?" }
   ]
 
 export const resolutions = [
