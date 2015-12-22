@@ -1,0 +1,48 @@
+.header {
+  composes: introLogo from './App.css';
+}
+
+.dots {
+  composes: introLogo from './App.css';
+  background: url('../images/dots.png') repeat-x;
+  height: 6px;
+  margin: 2rem auto 3rem;
+}
+
+.question {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.buttons {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.buttons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.answer {
+  composes: introButton from './App.css';
+  padding: 0.5rem 1rem 1rem
+}
+
+.answerYes {
+  composes: answer;
+  float: left;
+}
+
+.answerNo {
+  composes: answer;
+  float: right;
+}

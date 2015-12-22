@@ -1,19 +1,20 @@
 import React from 'react'
 import Resolution from './Resolution'
 
-const ResolutionList = ({resolutions, uniqueOrder, userResolutions, addResolution}) => (
+const ResolutionList = ({resolutions, listResolutions, addResolution}) => (
   <div>
     <h1>Resolution Generator</h1>
+    <h3>This year I will...</h3>
     <ul>
-      {userResolutions.map((x, i)  => (
+      {listResolutions.map((_, i)  => (
         <Resolution
-          key={resolutions[uniqueOrder[i]].id}
-          content={resolutions[uniqueOrder[i]].content}
+          key={i}
+          content={resolutions[i]}
         />
       ))}
     </ul>
 
-    {userResolutions.length < uniqueOrder.length
+    {listResolutions.length < resolutions.length
       ?
         <button onClick={addResolution}>add res</button>
       :

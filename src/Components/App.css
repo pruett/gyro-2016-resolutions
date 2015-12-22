@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.AppContainer {
+  box-sizing: border-box;
+  width: 70%;
+  margin: 5rem auto 0;
+  padding: 1rem;
+  border: 0.15rem solid #fff;
+}
+
+.AppContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+
+.shareIcons {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.shareIcon {
+  list-style: none;
+  float: left;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.introLogo {
+  width: 100%;
+  max-width: 40rem;
+  margin: 3rem auto 0;
+  display: block;
+}
+
+.introButton {
+  border: none;
+  outline: none;
+  background: url('../images/btn-bg.gif') -1px -1px no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+}

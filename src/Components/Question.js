@@ -1,20 +1,22 @@
 import React from 'react'
 
-const Question = ({content, nextQuestion, finalQuestion, showGenerator}) => (
-  <div>
-    {content}
-    { finalQuestion
-      ?
-        <div>
-          <button onClick={showGenerator}>Yes</button>
-          <button onClick={showGenerator}>No</button>
-        </div>
-      :
-        <div>
-          <button onClick={nextQuestion}>Yes</button>
-          <button onClick={nextQuestion}>No</button>
-        </div>
-    }
+import styles from './Questions.css'
+
+const Question = ({content, clickHandler}) => (
+  <div className={styles.question}>
+    <p className={styles.text}>{content}</p>
+    <div className={styles.buttons}>
+      <button
+        onClick={clickHandler}
+        className={styles.answerYes}
+      >Yes, I certainly did.
+      </button>
+      <button
+        onClick={clickHandler}
+        className={styles.answerNo}
+      >No. Whoops. I forgot.
+      </button>
+    </div>
   </div>
 )
 

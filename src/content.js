@@ -78,7 +78,7 @@ export const resolutions = [
   , 'make good on my promises.'
   , 'enjoy the sunrise as often as possible.'
   , 'feel great about my exercise routine and diet.'
-  , 'remember there\'s only 24 hourse in a day.'
+  , 'remember there\'s only 24 hours in a day.'
   , 'not forget how fortunate I am.'
   , 'remind my loved ones why I love them.'
   , 'be thankful for the people in my life.'
