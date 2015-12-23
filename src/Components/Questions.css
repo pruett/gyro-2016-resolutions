@@ -1,6 +1,13 @@
 .headline {
   composes: headline from './Resolutions.css';
   margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 500px) {
+  .headline {
+    font-size: 2rem;
+  }
 }
 
 .dots {
@@ -28,6 +35,7 @@
 .buttons {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .buttons:after {
@@ -38,15 +46,15 @@
 
 .answer {
   composes: generalBtn from './App.css';
-  width: 200px;
+  width: 40%;
+  display: inline-block;
+  margin: 0 5%;
 }
 
 .answerYes {
   composes: answer;
-  float: left;
 }
 
 .answerNo {
   composes: answer;
-  float: right;
 }

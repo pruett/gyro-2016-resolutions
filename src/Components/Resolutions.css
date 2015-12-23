@@ -1,13 +1,20 @@
 .loader {
   margin: 10rem auto;
   display: block;
+  max-width: 100%;
 }
 
 .headline {
   color: #E3D830;
   font-family: 'Petit Formal Script', cursive;
-  font-size: 2rem;
+  font-size: 1.55rem;
   text-align: center;
+}
+
+@media (min-width: 850px) {
+  .headline {
+    font-size: 2rem;
+  }
 }
 
 .list {
@@ -27,17 +34,31 @@
 }
 
 .resolutionImage {
-  width: 40%;
+  width: 100%;
+  max-width: 270px;
   display: block;
   margin: 0 auto;
-  float: left;
-  max-width: 220px;
+}
+
+@media (min-width: 850px) {
+  .resolutionImage {
+    width: 40%;
+    float: left;
+    max-width: 220px;
+  }
 }
 
 .content {
-  width: 60%;
-  float: right;
-  margin-top: 2rem;
+  width: 100%;
+  margin: 1rem auto 0;
+}
+
+@media (min-width: 850px) {
+  .content {
+    width: 60%;
+    float: right;
+    margin-top: 2rem;
+  }
 }
 
 .num {

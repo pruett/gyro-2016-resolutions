@@ -87,5 +87,15 @@ body {
 
 .introButton {
   composes: generalBtn;
-  float: right;
+  margin: 3rem auto 0;
+  width: 80%;
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .introButton {
+    float: right;
+    margin: 0;
+    width: auto;
+  }
 }

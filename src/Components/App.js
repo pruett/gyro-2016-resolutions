@@ -12,7 +12,6 @@ const Header = () => (
   <div className={styles.header}>
     <ul className={styles.headerList}>
       <li><a href="/"><img className={styles.logo} src={logo} /></a></li>
-      {/*<li><img className={styles.icon} src={shareIcon} /></li>*/}
     </ul>
   </div>
 )

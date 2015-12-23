@@ -3,7 +3,6 @@ import Resolution from './Resolution'
 
 import styles from './Resolutions.css'
 import loader from '../images/loading.gif'
-import share from '../images/share.png'
 
 const Loader = () => (
   <img className={styles.loader} src={loader} />
