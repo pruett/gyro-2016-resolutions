@@ -9,12 +9,12 @@ const Question = ({content, clickHandler}) => (
       <button
         onClick={clickHandler}
         className={styles.answerYes}
-      >{content.positive}
+      >Yes
       </button>
       <button
         onClick={clickHandler}
         className={styles.answerNo}
-      >{content.negative}
+      >No
       </button>
     </div>
   </div>

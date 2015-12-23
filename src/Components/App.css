@@ -1,20 +1,20 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 body {
-  background: url('../images/bg.jpg');
+  background: url('../images/bg-app.jpg');
   background-size: cover;
   background-repeat: repeat;
 }
 
 .AppContainer {
+  background: url('../images/bg-content.jpg') repeat;
+  background-size: cover;
   box-sizing: border-box;
-  width: 70%;
-  margin: 5rem auto 0;
-  padding: 1rem;
+  width: 85%;
+  margin: 5rem auto 5rem;
+  padding: 8%;
   border: 0.15rem solid #fff;
+  max-width: 62rem;
+  min-height: 600px;
+  position: relative;
 }
 
 .AppContainer:after {
@@ -29,44 +29,63 @@ body {
   clear: both;
 }
 
-.logo {
-  float: left;
-}
-
-.shareIcons {
-  float: right;
+.headerList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: 0;
   padding: 0;
 }
 
-.shareIcon {
-  list-style: none;
-  float: left;
+.logo {
+  width: 35%;
+  max-width: 170px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .icon {
   cursor: pointer;
+  max-width: 35px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .introLogo {
   width: 100%;
-  max-width: 40rem;
+  max-width: 35rem;
   margin: 3rem auto 0;
   display: block;
+  box-sizing: border-box;
+}
+
+.generalBtn {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background: #fff;
+  color: #2c2c2c;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 0px rgba(210, 210, 210, 0.5);
+}
+
+.generalBtn:active {
+  transform: translateY(4px);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.65);
+}
+
+.generalBtn:hover {
+  background: #f1f1f1;
 }
 
 .introButton {
-  border: none;
-  outline: none;
-  background: url('../images/btn-bg.gif') -1px -1px no-repeat;
-  background-size: cover;
-  padding: 1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
+  composes: generalBtn;
   float: right;
-}
-
-.introButton:active {
-  transform: translateY(2px);
 }

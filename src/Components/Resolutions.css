@@ -1,3 +1,65 @@
-.header {
-  composes: introLogo from './App.css';
+.loader {
+  width: 65%;
+  margin: 5rem auto;
+  display: block;
+}
+
+.headline {
+  color: #E3D830;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.list {
+  padding: 0 4%;
+  margin: 3rem 0 0;
+}
+
+.resolution {
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+.resolution:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.resolutionImage {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  float: left;
+  max-width: 220px;
+}
+
+.content {
+  width: 60%;
+  float: right;
+  margin-top: 2rem;
+}
+
+.num {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.text {
+  color: #fff;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.button {
+  composes: generalBtn from './App.css';
+  padding: 0.5rem 1rem;
+  width: 220px;
+  display: block;
+  margin: 0 auto;
 }

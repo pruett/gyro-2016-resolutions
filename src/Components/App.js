@@ -7,14 +7,12 @@ import styles from './App.css'
 import header from '../images/header-intro.png'
 import logo from '../images/logo.png'
 import shareIcon from '../images/icon-share.png'
-import printIcon from '../images/icon-print.png'
 
 const Header = () => (
   <div className={styles.header}>
-    <img className={styles.logo} src={logo} />
-    <ul className={styles.shareIcons}>
-      <li className={styles.shareIcon}><img className={styles.icon} src={shareIcon} /></li>
-      <li className={styles.shareIcon}><img className={styles.icon} src={printIcon} /></li>
+    <ul className={styles.headerList}>
+      <li><a href="/"><img className={styles.logo} src={logo} /></a></li>
+      <li><img className={styles.icon} src={shareIcon} /></li>
     </ul>
   </div>
 )
@@ -72,6 +70,7 @@ class App extends React.Component {
           resolutions={this.props.resolutions}
           listResolutions={this.state.listResolutions}
           addResolution={this.addResolution.bind(this)}
+          picks={this.props.picks}
         />
       : <div></div>
 

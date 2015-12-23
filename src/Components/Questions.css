@@ -1,5 +1,6 @@
-.header {
-  composes: introLogo from './App.css';
+.headline {
+  composes: headline from './Resolutions.css';
+  margin-top: 3rem;
 }
 
 .dots {
@@ -19,10 +20,13 @@
 .text {
   color: #fff;
   font-size: 1.25rem;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
 }
 
 .buttons {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -33,9 +37,8 @@
 }
 
 .answer {
-  composes: introButton from './App.css';
-  padding: .5rem 1rem 1.5rem;
-  max-width: 180px;
+  composes: generalBtn from './App.css';
+  width: 200px;
 }
 
 .answerYes {

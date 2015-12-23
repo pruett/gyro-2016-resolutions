@@ -22,6 +22,7 @@ export const resolutions = [
 
   [ 'learn to speak emoji.'
   , 'build a time machine so I can go back and actually see through every other New Year\'s resolution I\'ve ever made.'
+  , 'direct the next Star Wars installment'
   , 'figure out those Mind\'s Eye pictures from the 90s.'
   , 'become undisputed international shuffleboard champ.'
   , 'have dinner with Chuck Norris.'
@@ -71,12 +72,6 @@ export const resolutions = [
   , 'enjoy the sunrise as often as possible.'
   , 'feel great about my exercise routine and diet.'
   , 'remember there\'s only 24 hours in a day.'
-  , 'not forget how fortunate I am.'
-  , 'remind my loved ones why I love them.'
-  , 'be thankful for the people in my life.'
-  , 'really mean it when I ask people, "How are you?"'
-  , 'always find a way to see the silver lining.'
-  , 'be proud of my accomplishments, but not rest on my laurels.'
   , 'tell someone I love them every day.'
   ]
 ]

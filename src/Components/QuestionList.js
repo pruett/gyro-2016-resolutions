@@ -2,11 +2,10 @@ import React from 'react'
 import Question from './Question'
 
 import styles from './Questions.css'
-import header from '../images/header-questions.png'
 
 const QuestionList = ({questions, questionId, nextQuestion, showGenerator}) => (
   <div>
-    <img className={styles.header} src={header} />
+    <h1 className={styles.headline}>Please answer a few questions so we can better tailor resolutions for you</h1>
     <div className={styles.dots}></div>
 
     <Question
