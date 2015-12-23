@@ -12,7 +12,7 @@ const Header = () => (
   <div className={styles.header}>
     <ul className={styles.headerList}>
       <li><a href="/"><img className={styles.logo} src={logo} /></a></li>
-      <li><img className={styles.icon} src={shareIcon} /></li>
+      {/*<li><img className={styles.icon} src={shareIcon} /></li>*/}
     </ul>
   </div>
 )
@@ -27,10 +27,10 @@ const IntroSection = ({showQuestions}) => (
 class App extends React.Component {
   componentWillMount () {
     this.setState({
-      showIntro: false,
+      showIntro: true,
       showQuestions: false,
       questionId: 0,
-      showResolutionGenerator: true,
+      showResolutionGenerator: false,
       listResolutions: [true]
     })
   }
