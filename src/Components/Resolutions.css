@@ -1,6 +1,5 @@
 .loader {
-  width: 65%;
-  margin: 5rem auto;
+  margin: 10rem auto;
   display: block;
 }
 
@@ -62,4 +61,69 @@
   width: 220px;
   display: block;
   margin: 0 auto;
+}
+
+.share {
+  margin: 3rem auto 0;
+  display: block;
+}
+
+.shareCallout {
+  color: #fff;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 1rem;
+  margin: 5rem 0 1.5rem;
+  text-align: center;
+}
+
+.shareList {
+  padding: 0;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.shareList:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.shareList > li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.shareIcon {
+  width: 55px;
+  height: 55px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.shareFb {
+  composes: shareIcon;
+  background-image: url('../images/share-fb.png');
+}
+
+.shareFb:hover {
+  background-image: url('../images/share-fb-hover.png');
+}
+
+.sharePin {
+  composes: shareIcon;
+  background-image: url('../images/share-pin.png');
+}
+
+.sharePin:hover {
+  background-image: url('../images/share-pin-hover.png');
+}
+
+.shareTwttr {
+  composes: shareIcon;
+  background-image: url('../images/share-twt.png');
+}
+
+.shareTwttr:hover {
+  background-image: url('../images/share-twt-hover.png');
 }
